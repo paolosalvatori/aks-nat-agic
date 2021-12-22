@@ -7,9 +7,9 @@ clear
 echo "================================================="
 echo "Install AKS Cluster. Choose an option (1-3): "
 echo "================================================="
-options=("Private AKS Cluster"
-    "Public AKS Cluster"
-    "Quit")
+options=("1 - Private AKS Cluster"
+    "2 - Public AKS Cluster"
+    "3 -Quit")
 
 # Select an option
 COLUMNS=0
@@ -31,8 +31,8 @@ select opt in "${options[@]}"; do
 done
 
 # AKS cluster name
-aksPrefix="Igor"
-aksName="${aksPrefix}Aks"
+aksPrefix="ABCDS-AKS-"
+aksName="$(aksPrefix)Dev"
 validateTemplate=1
 useWhatIf=0
 
@@ -40,17 +40,17 @@ useWhatIf=0
 template="./azuredeploy.json"
 
 # Name and location of the resource group for the Azure Kubernetes Service (AKS) cluster
-aksResourceGroupName="${aksPrefix}RG"
-location="WestEurope"
+aksResourceGroupName="ABCDS-AKS-Dev"
+location="centralus"
 
 # Name and resource group name of the Azure Container Registry used by the AKS cluster.
 # The name of the cluster is also used to create or select an existing admin group in the Azure AD tenant.
-acrName="${aksPrefix}AksAcr"
+acrName="abcdsaksacrdev"
 acrResourceGroupName="$aksResourceGroupName"
-acrSku="Standard"
+acrSku="Premium"
 
 # Key Vault
-keyVaultName="${aksPrefix}GroupKeyVault"
+keyVaultName="ABCDS-AKS-KV-Dev-V1"
 
 # Application Gateway
 applicationGatewayName="${aksPrefix}ApplicationGateway"
@@ -232,7 +232,7 @@ if [[ $? != 0 ]]; then
                 --template-file $template \
                 --parameters $parameters \
                 --parameters aksClusterName=$aksName \
-                aksClusterKubernetesVersion=$kubernetesVersion \
+                aksClusterKubernetesVersion="1.20.9" \
                 acrName=$acrName \
                 keyVaultName=$keyVaultName \
                 applicationGatewayName=$applicationGatewayName
@@ -251,7 +251,7 @@ if [[ $? != 0 ]]; then
                 --template-file $template \
                 --parameters $parameters \
                 --parameters aksClusterName=$aksName \
-                aksClusterKubernetesVersion=$kubernetesVersion \
+                aksClusterKubernetesVersion="1.20.9" \
                 acrName=$acrName \
                 keyVaultName=$keyVaultName \
                 applicationGatewayName=$applicationGatewayName)
@@ -274,7 +274,7 @@ if [[ $? != 0 ]]; then
         --template-file $template \
         --parameters $parameters \
         --parameters aksClusterName=$aksName \
-        aksClusterKubernetesVersion=$kubernetesVersion \
+        aksClusterKubernetesVersion="1.20.9" \
         acrName=$acrName \
         keyVaultName=$keyVaultName \
         applicationGatewayName=$applicationGatewayName 1>/dev/null
