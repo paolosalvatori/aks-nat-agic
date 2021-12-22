@@ -36,11 +36,14 @@
       "value": "---- BEGIN SSH2 PUBLIC KEY ----\nAAAAB3NzaC1yc2EAAAADAQABAAABgQC6p61YD5rgRih+aA4wQrCXTkMy\nxyyRz2PgNC2O2fuheaM/YGOtYIefHSYCHoCmHOOkgNrA9j/wfYtwa0QGVzJxXCT8\nvdu8QGIv6mTdGMKPy4DfZsRdgvNxlFE303UhAsP4iseDpkFBW1C0VyYQJwywH2fK\nKZQ1/VQEy8i/ghP8PWPbbAZLyC+iQF6ScZHlkOv5dOVqdFmElYyVqKtWtZRqzn+D\n/s855qr3cbNXqtMfhJ0ORP6w2l02CRxrP+jWLm9GRPftsvd5aI4c8KIBDzEnUscW\nRHkU/YUt3Zf2tMD0GKqx/AwOuDA8tpizrXv2tcdgk6VeqHmNTElNzCjiKjhZ6gYQ\n/EAHrvqqygMpYvuMLhPKqSx09l8YUSO4a7lFlWi9ojPQhwrZiNmlKB48DyKCLmgr\n4NmVsFJ8ubvTQZV2k/xHY1c1lYU9U44xWL7y+eKDASOAjVMmKzcdx2diiDpV7Cfe\n2uA5S19ouvQQ+Maghi0yBd+AxtbVdMdJjhd+6vk=\n---- END SSH2 PUBLIC KEY ----"
     },
     "aadProfileManaged": {
-      "value": false
+      "value": true
     },
     "aadProfileEnableAzureRBAC": {
-      "value": false
-    },
+      "value": true
+    },	
+	"aadProfileTenantId": {
+      "value": "106b471d-4ca9-4657-b2a5-b0fe31f45415"
+	},
     "aadProfileAdminGroupObjectIDs": {
       "value": [
         "1535308b-9d1c-4172-9b7e-9127216db74d"
@@ -53,7 +56,7 @@
       "value": "system"
     },
     "systemNodePoolVmSize": {
-      "value": "Standard_DS3_v2"
+      "value": "Standard_E16d_v4"
     },
     "systemNodePoolAgentCount": {
       "value": 3
@@ -73,7 +76,7 @@
       "value": "user"
     },
     "userNodePoolVmSize": {
-      "value": "Standard_DS3_v2"
+      "value": "Standard_E16d_v4"
     },
     "userNodePoolAgentCount": {
       "value": 3
@@ -121,7 +124,7 @@
       "value": 60
     },
     "vmSize": {
-      "value": "Standard_F4s_v2"
+      "value": "Standard_A1_v2"
     },
     "imagePublisher": {
       "value": "Canonical"
@@ -133,13 +136,13 @@
       "value": "18.04-LTS"
     },
     "authenticationType": {
-      "value": "password"
+      "value": "sshPublicKey"
     },
     "vmAdminUsername": {
-      "value": "azadmin"
+      "value": "AKSAdmin"
     },
     "vmAdminPasswordOrKey": {
-      "value": "W1@1Qaz01QQ"
+      "value": "---- BEGIN SSH2 PUBLIC KEY ----\nAAAAB3NzaC1yc2EAAAADAQABAAABgQC6p61YD5rgRih+aA4wQrCXTkMy\nxyyRz2PgNC2O2fuheaM/YGOtYIefHSYCHoCmHOOkgNrA9j/wfYtwa0QGVzJxXCT8\nvdu8QGIv6mTdGMKPy4DfZsRdgvNxlFE303UhAsP4iseDpkFBW1C0VyYQJwywH2fK\nKZQ1/VQEy8i/ghP8PWPbbAZLyC+iQF6ScZHlkOv5dOVqdFmElYyVqKtWtZRqzn+D\n/s855qr3cbNXqtMfhJ0ORP6w2l02CRxrP+jWLm9GRPftsvd5aI4c8KIBDzEnUscW\nRHkU/YUt3Zf2tMD0GKqx/AwOuDA8tpizrXv2tcdgk6VeqHmNTElNzCjiKjhZ6gYQ\n/EAHrvqqygMpYvuMLhPKqSx09l8YUSO4a7lFlWi9ojPQhwrZiNmlKB48DyKCLmgr\n4NmVsFJ8ubvTQZV2k/xHY1c1lYU9U44xWL7y+eKDASOAjVMmKzcdx2diiDpV7Cfe\n2uA5S19ouvQQ+Maghi0yBd+AxtbVdMdJjhd+6vk=\n---- END SSH2 PUBLIC KEY ----"
     },
     "diskStorageAccounType": {
       "value": "Premium_LRS"
