@@ -48,7 +48,7 @@ read -p "Enter the name of the Key Vault (i.e. ABCDS-AKS-KV-Dev-V1): " keyVaultN
 
 # AKS cluster name
 aksPrefix="ABCDS-AKS-"
-aksName="$(aksPrefix)Dev"
+aksName="${aksPrefix}Dev"
 validateTemplate=1
 useWhatIf=0
 
@@ -61,7 +61,7 @@ location="centralus"
 
 # Name and resource group name of the Azure Container Registry used by the AKS cluster.
 # The name of the cluster is also used to create or select an existing admin group in the Azure AD tenant.
-acrName="abcdsaksacrdev"
+acrName="abcdsaksacrdev1"
 acrResourceGroupName="$aksResourceGroupName"
 acrSku="Premium"
 
