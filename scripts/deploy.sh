@@ -42,7 +42,6 @@ select opt in "${options[@]}"; do
 done
 echo ""
 echo ""
-echo ""
 # Key Vault
 read -p "Enter the name of the Key Vault (i.e. ABCDS-AKS-KV-Dev-V1): " keyVaultName
 
