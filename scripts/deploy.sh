@@ -40,7 +40,7 @@ select opt in "${options[@]}"; do
     *) echo "invalid option $REPLY" ;;
     esac
 done
-
+echo ""
 echo ""
 echo ""
 # Key Vault
