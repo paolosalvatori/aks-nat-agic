@@ -4,12 +4,23 @@
 clear
 
 # Print the menu
-echo "================================================="
-echo "Install AKS Cluster. Choose an option (1-3): "
-echo "================================================="
-options=("1 - Private AKS Cluster"
-    "2 - Public AKS Cluster"
-    "3 -Quit")
+echo "===================================================="
+echo "                                                    "
+echo "           +%%%%-     %%%%%%%%#+.   .-*%%%%%##===-  "
+echo "          *#####+    -###*==+####  =####++####*     "
+echo "        .*%%%#%%#    *%%%:   *%%* +%%%*.  .****:    "
+echo "       :#%%%-*%%%-   #%%%####%%= .%%%%.             "
+echo "      -#%%%+:+%%%*  -%%%+...+%%#.:%%%%    -***+     "
+echo "     *@@@@@@@@@@@@. #@@@*--=%@@@- %@@@%+=#@@@@:     "
+echo "    *%%%#.    *%%%=.%%%%%%%%%%#-   =#%%%%%%#=       "
+echo "                                                    "
+echo "===================================================="
+echo "    Install AKS Cluster. Choose an option (1-3): "
+echo "===================================================="
+echo ""
+options=("Private AKS Cluster"
+    "Public AKS Cluster"
+    "Quit")
 
 # Select an option
 COLUMNS=0
@@ -29,6 +40,11 @@ select opt in "${options[@]}"; do
     *) echo "invalid option $REPLY" ;;
     esac
 done
+echo ""
+echo ""
+# Key Vault
+read -p "Enter the name of the Key Vault (i.e. ABCDS-AKS-KV-Dev-V1): " keyVaultName
+
 
 # AKS cluster name
 aksPrefix="ABCDS-AKS-"
@@ -49,8 +65,6 @@ acrName="abcdsaksacrdev"
 acrResourceGroupName="$aksResourceGroupName"
 acrSku="Premium"
 
-# Key Vault
-keyVaultName="ABCDS-AKS-KV-Dev-V1"
 
 # Application Gateway
 applicationGatewayName="${aksPrefix}ApplicationGateway"
