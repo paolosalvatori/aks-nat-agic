@@ -24,7 +24,7 @@
       "value": "172.17.0.1/16"
     },
     "aksClusterOutboundType": {
-      "value": "managedNATGateway"
+      "value": "userAssignedNATGateway"
     },
     "aksClusterKubernetesVersion": {
       "value": "1.20.9"
