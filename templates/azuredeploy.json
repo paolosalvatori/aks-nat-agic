@@ -6,7 +6,7 @@
       "defaultValue": "[resourceGroup().location]",
       "type": "string",
       "metadata": {
-        "description": "Specifies the location of AKS cluster."
+        "description": "Specifies the location of AKS cluster ."
       }
     },
     "aksClusterName": {
