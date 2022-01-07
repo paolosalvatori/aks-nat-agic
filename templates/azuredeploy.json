@@ -6,7 +6,7 @@
       "defaultValue": "[resourceGroup().location]",
       "type": "string",
       "metadata": {
-        "description": "Specifies the location of AKS cluster ."
+        "description": "Specifies the location of AKS cluster."
       }
     },
     "aksClusterName": {
@@ -432,7 +432,7 @@
     },
     "azurePolicyEnabled": {
       "type": "bool",
-      "defaultValue": true,
+      "defaultValue": false,
       "metadata": {
         "description": "Specifies whether the azurepolicy add-on is enabled or not."
       }

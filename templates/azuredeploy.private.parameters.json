@@ -15,10 +15,10 @@
       "value": "10.28.0.0/16"
     },
     "aksClusterServiceCidr": {
-      "value": "10.27.0.0/16"
+      "value": "10.41.0.0/24"
     },
     "aksClusterDnsServiceIP": {
-      "value": "10.27.0.10"
+      "value": "10.41.0.10"
     },
     "aksClusterDockerBridgeCidr": {
       "value": "172.17.0.1/16"
