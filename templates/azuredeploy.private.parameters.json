@@ -62,10 +62,10 @@
       "value": 3
     },
     "systemNodePoolMaxCount": {
-      "value": 5
+      "value": 1
     },
     "systemNodePoolMinCount": {
-      "value": 3
+      "value": 1
     },
     "systemNodePoolNodeTaints": {
       "value": [
@@ -82,7 +82,7 @@
       "value": 3
     },
     "userNodePoolMaxCount": {
-      "value": 3
+      "value": 1
     },
     "userNodePoolMinCount": {
       "value": 1

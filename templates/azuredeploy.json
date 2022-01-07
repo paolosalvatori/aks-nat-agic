@@ -289,7 +289,7 @@
       }
     },
     "systemNodePoolAvailabilityZones": {
-      "defaultValue": [],
+      "defaultValue": [1,2,3],
       "type": "array",
       "metadata": {
         "description": "Specifies the availability zones for the agent nodes in the system node pool. Requirese the use of VirtualMachineScaleSets as node pool type."
@@ -410,7 +410,7 @@
       }
     },
     "userNodePoolAvailabilityZones": {
-      "defaultValue": [],
+      "defaultValue": [1,2,3],
       "type": "array",
       "metadata": {
         "description": "Specifies the availability zones for the agent nodes in the user node pool. Requirese the use of VirtualMachineScaleSets as node pool type."
@@ -418,7 +418,7 @@
     },
     "httpApplicationRoutingEnabled": {
       "type": "bool",
-      "defaultValue": false,
+      "defaultValue": true,
       "metadata": {
         "description": "Specifies whether the httpApplicationRouting add-on is enabled or not."
       }
@@ -795,7 +795,7 @@
     },
     "acrPublicNetworkAccess": {
       "type": "string",
-      "defaultValue": "Enabled",
+      "defaultValue": "Disabled",
       "allowedValues": [
         "Enabled", 
         "Disabled"
