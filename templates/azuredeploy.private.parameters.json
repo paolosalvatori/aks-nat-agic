@@ -59,7 +59,7 @@
       "value": "Standard_E16s_v3"
     },
     "systemNodePoolAgentCount": {
-      "value": 3
+      "value": 1
     },
     "systemNodePoolMaxCount": {
       "value": 1
@@ -79,7 +79,7 @@
       "value": "Standard_E16s_v3"
     },
     "userNodePoolAgentCount": {
-      "value": 3
+      "value": 1
     },
     "userNodePoolMaxCount": {
       "value": 1

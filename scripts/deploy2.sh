@@ -50,7 +50,7 @@ read -p "Enter the name of the Key Vault (i.e. ABCDS-AKS-KV-Dev-V1): " keyVaultN
 aksPrefix="ABCDS-AKS-"
 aksName="${aksPrefix}Dev"
 validateTemplate=1
-useWhatIf=0
+useWhatIf=1
 
 # ARM template and parameters file
 template="./azuredeploy.json"

@@ -196,7 +196,7 @@
       }
     },
     "systemNodePoolAgentCount": {
-      "defaultValue": 3,
+      "defaultValue": 13,
       "type": "int",
       "metadata": {
         "description": "Specifies the number of agents (VMs) to host docker containers in the system node pool. Allowed values must be in the range of 1 to 100 (inclusive). The default value is 1."
